@@ -6,8 +6,6 @@
 
 body{
     background-color: #f2f2f2;
-    width: 375px;
-    height: 667px;
     text-align: center;
 }
 /*面板*/
@@ -19,6 +17,8 @@ body{
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 0 5px #ccc;
+    width: 100%;
+    height: 100%;
 }
 /*面板的头部*/
 #panel .panel-header{
