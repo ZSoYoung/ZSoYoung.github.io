@@ -1,0 +1,140 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*设置背景颜色*/
+    background-color: #F2F2F2;
+}
+
+/*面板*/
+#panel{
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #999;
+    width: 260px;
+    margin: 100px auto 0;
+}
+
+/*面板的头部*/
+#panel .panel-top{
+    font-size: 13px;
+    font-family: 'arial';
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    width: 220px;
+    text-align: center;
+    margin: 0 auto;
+    /*background-color: blue;*/
+}
+
+
+/*面板的中间*/
+#panel .panel-content{
+    margin-top: 20px;
+}
+
+/*设置面板输入框的样式*/
+#panel .panel-content .int{
+   /*background-color: red;*/
+   height: 36px;
+   margin-bottom: 9px;
+   position: relative;
+}
+
+/*
+   设置面板中输入框中图片
+   原理:
+     让lable相对父标签进行定位,可停留在父标签的任意位置
+*/
+#panel .panel-content label{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+/*设置输入框的样式*/
+#panel .panel-content .int input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+/*当输入框获取到焦点的时候*/
+#panel .panel-content input:focus{
+    outline: none;
+    border: 1px solid orangered;
+    box-shadow: 0 0 2px orangered;
+
+}
+
+#panel .panel-content .pwd-login a{
+    display: inline-block;
+    color: gray;
+    font-size: 13px;
+}
+
+
+#panel .panel-content .setting{
+    margin-bottom: 20px;
+
+}
+
+#panel .panel-content .setting a{
+    text-decoration: none;
+    color: #999;
+    font-size: 13px;
+}
+
+#panel .panel-content .setting .forget-pwd{
+    float: right;
+}
+
+#panel .login button{
+    width: 100%;
+    height: 33px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: orangered;
+}
+
+#panel .reg{
+    /*background-color: red;*/
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#panel .reg a{
+    color: orangered;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+
+/*
+  面板尾部
+   注意:如果是图片要想垂直居中,一定要设置: vertical-align: middle;
+ */
+#panel .panel-footer{
+    height: 40px;
+    line-height: 40px;
+}
+
+#panel .panel-footer img{
+    width: 30px;
+    vertical-align: middle;
+}
+
