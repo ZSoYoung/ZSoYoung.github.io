@@ -1,140 +1,118 @@
-a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var{
+
+*{
     padding: 0;
     margin: 0;
 }
 
 body{
-    /*设置背景颜色*/
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+    width: 375px;
+    height: 667px;
+    text-align: center;
 }
-
 /*面板*/
 #panel{
     background-color: white;
+    display: inline-block;
+    margin-top: 10px;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 0 10px #999;
-    width: 260px;
-    margin: 100px auto 0;
+    box-shadow: 0 0 5px #ccc;
 }
-
 /*面板的头部*/
-#panel .panel-top{
+#panel .panel-header{
     font-size: 13px;
-    font-family: 'arial';
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: 1px solid #ddd;
-    width: 220px;
-    text-align: center;
+    width: 300px;
     margin: 0 auto;
-    /*background-color: blue;*/
 }
-
-
-/*面板的中间*/
+/*内容*/
 #panel .panel-content{
-    margin-top: 20px;
+    margin-top: 100px;
 }
-
-/*设置面板输入框的样式*/
-#panel .panel-content .int{
-   /*background-color: red;*/
-   height: 36px;
-   margin-bottom: 9px;
-   position: relative;
+#panel .panel-content .ipt{
+    margin-bottom: 10px;
+    position: relative;
+    height: 33px;
 }
-
-/*
-   设置面板中输入框中图片
-   原理:
-     让lable相对父标签进行定位,可停留在父标签的任意位置
-*/
 #panel .panel-content label{
     position: absolute;
-    top: 7px;
+    top: 6px;
     left: 6px;
 }
-
-/*设置输入框的样式*/
-#panel .panel-content .int input{
+#panel .panel-content input{
     width: 100%;
     height: 100%;
-    border: 1px solid #ddd;
+    border: 1px #ddd solid;
     padding-left: 40px;
     box-sizing: border-box;
     border-radius: 6px;
 }
-
-/*当输入框获取到焦点的时候*/
-#panel .panel-content input:focus{
+#panel .panel-content .ipt input:focus{
     outline: none;
-    border: 1px solid orangered;
+    border: 1px orangered solid;
     box-shadow: 0 0 2px orangered;
-
 }
-
-#panel .panel-content .pwd-login a{
-    display: inline-block;
+#panel .panel-content .forget{
+    margin-top: 10px;
+    height: 25px;
+    position: relative;
+}
+#panel .panel-content .forget a{
+    font-size: 13px;
+    text-decoration: none;
     color: gray;
-    font-size: 13px;
 }
-
-
-#panel .panel-content .setting{
-    margin-bottom: 20px;
-
+#panel .panel-content .forget input{
+    width: 20px;
+    float: left;
+    border: none;
 }
-
-#panel .panel-content .setting a{
-    text-decoration: none;
-    color: #999;
-    font-size: 13px;
-}
-
-#panel .panel-content .setting .forget-pwd{
+#panel .panel-content .forget a.pwdright{
     float: right;
+    line-height: 25px;
 }
-
-#panel .login button{
+#panel .panel-content .forget a.pwdleft{
+    position: absolute;
+    left: 20px;
+    line-height: 25px;
+}
+#panel .panel-content .login button{
     width: 100%;
+    border: none;
     height: 33px;
-    border: 0;
-    color: white;
     font-size: 18px;
-    margin-bottom: 10px;
-    border-radius: 6px;
+    margin-top: 10px;
     background-color: orangered;
+    border-radius: 6px;
+    color: white;
 }
-
-#panel .reg{
-    /*background-color: red;*/
-    height: 30px;
-    line-height: 30px;
-    font-size: 13px;
+#panel .panel-content .login button:focus{
+    outline: none;
+}
+#panel .panel-content .reg{
     text-align: center;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #666;
 }
-
-#panel .reg a{
+#panel .panel-content .reg a{
     color: orangered;
+    font-size: 14px;
     text-decoration: none;
-    margin-left: 4px;
 }
-
-
-/*
-  面板尾部
-   注意:如果是图片要想垂直居中,一定要设置: vertical-align: middle;
- */
-#panel .panel-footer{
-    height: 40px;
-    line-height: 40px;
+#panel .panel-footer
+{
+    margin-top: 150px;
+    height: 50px;
+    /*background-color: red;*/
+    line-height: 50px;
 }
-
-#panel .panel-footer img{
+#panel .panel-footer img {
     width: 30px;
-    vertical-align: middle;
+    vertical-align: text-bottom;
 }
+#panel .panel-footer span {
 
+}
