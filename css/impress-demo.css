@@ -56,7 +56,6 @@ body {
     min-height: 740px;
 
     background: rgb(215, 215, 215);
-    /*background-image: url("../image/bkg.jpeg");*/
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
@@ -184,17 +183,17 @@ a:focus {
     height: 700px;
     padding: 40px 60px;
 
-    background-color: white;
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    /*background-color: white;*/
+    /*border: 1px solid rgba(0, 0, 0, .3);*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, .1);*/
 
     color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 700px;
     letter-spacing: -1px;
 }
 
@@ -228,8 +227,8 @@ a:focus {
 #title .try {
     font-size: 64px;
     position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+    top: -1.3em;
+    /*left: -0.5em;*/
 
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -239,7 +238,7 @@ a:focus {
 }
 
 #title h1 {
-    font-size: 190px;
+    font-size: 48px;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -428,7 +427,6 @@ a:focus {
     -o-transform:      translateZ(-40px);
     transform:         translateZ(-40px);
 }
-
 #its-in-3d .you {
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -671,3 +669,51 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+#one-more-thing{
+    background-image: url("http://img4.imgtn.bdimg.com/it/u=748313213,4148189825&fm=214&gp=0.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 300px;
+}
+#swipe.present .line1{
+    font-weight: bolder;
+    font-size: 48px;
+
+    -webkit-transform: translateZ(40px);
+    -moz-transform:    translateZ(40px);
+    -ms-transform:     translateZ(40px);
+    -o-transform:      translateZ(40px);
+    transform:        translateZ(40px);
+
+    -webkit-transition: 0.5s 0.25s;
+    -moz-transition: 0.5s 0.25s;
+    -ms-transition: 0.5s 0.25s;
+    -o-transition: 0.5s 0.25s;
+    transition: 0.5s 0.25s;
+}
+#swipe.present .line2{
+    -webkit-transform: translateY(10px);
+    -moz-transform:    translateY(10px);
+    -ms-transform:     translateY(10px);
+    -o-transform:      translateY(10px);
+    transform:        translateY(10px);
+
+    -webkit-transition: 0.5s 0.5s;
+    -moz-transition: 0.5s 0.5s;
+    -ms-transition: 0.5s 0.5s;
+    -o-transition: 0.5s 0.5s;
+    transition: 0.5s 0.5s;
+}
+#swipe.present .line3{
+    -webkit-transform: translateY(10px);
+    -moz-transform:    translateY(10px);
+    -ms-transform:     translateY(10px);
+    -o-transform:      translateY(10px);
+    transform:        translateY(10px);
+
+    -webkit-transition: 0.5s 0.75s;
+    -moz-transition: 0.5s 0.75s;
+    -ms-transition: 0.5s 0.75s;
+    -o-transition: 0.5s 0.75s;
+    transition: 0.5s 0.75s;
+}
