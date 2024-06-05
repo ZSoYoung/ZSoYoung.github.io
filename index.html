@@ -1,1 +1,90 @@
-<p>你好啊</p>
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<title>周周❤️曼曼</title>  
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
+		}
+		audio{
+			display: none;
+		}
+	</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<audio autoplay="autoplay" loop="loop" preload="auto" controls="controls"
+            src="renxi.mp3" id="bgmMusic"> 
+			</audio>
+			<div id="code">
+				<span class="comments">曼曼宝贝：</span><br />
+				<span class="space"/><span class="comments">我亲爱的曼曼宝贝，我是有很多话想要对你说的，可是一下子又不知道从何说起……自2023年7月29日那个中午，我们两个的命运就紧紧的绑在了一起。对于我来说，你就像是黑暗中的那一缕阳光，是你给了我温暖、给了我希望，是你让我在这个世界上不再感觉到孤独。我很庆幸能遇到你，遇到你是我今生最大的幸运！我的宝贝，我在写这段字的时候嘴角不自觉的上扬，我的内心已被幸福充满。以前的我就像是在黑暗中独自蹒跚的赶路者，没有目标，没有希望，就在这时，却遇到了一个散发着柔弱却又温暖光芒的同行者，她对我伸出手说：以后的路，我们一起走吧！</span><br />
+				<span class="space"/><span class="comments">乖乖我的宝贝，周周也是一个很坚强的人，可是在你面前总是像个孩子，像一个很软弱的人，会哭鼻子，会矫情，还会撒娇……但我仍是一个很坚强的人，我愿意把我柔弱的一面交给你，面向世界的那一面仍是举着盾牌的我。我愿尽自己最大的可能去保护你，呵护你，因为你是我的宝儿，永远都是！无论这个世界如何布满荆棘，无论我们的路如何泥泞，我都会冲在前面，毫不畏缩。但是我认为我们的未来是光明的，和你在一起，我对未来充满了希望，我认为我们必然是幸福的，美满的！</span><br />
+				<span class="space"/><span class="comments">我最最亲爱的曼曼，感谢你对周周的信任和喜欢，周周一定不会辜负宝宝的一片真心，士为知己者死，女为悦己者容，对于周周来说，你既是我的爱人，又是我的挚友，我对我们稳固的关系充满了信心。我愿做你的骑士，永远的骑士，骑士的誓言就是：不离不弃，永不背叛！倘若你对这个世界宣战，那我必然拔剑冲锋！毫不犹豫！自从和你在一起，我便认定了你，从此周周的世界便只有你，请你一定要相信周周！相信自己！</span><br />
+				<span class="space"/><span class="comments">亲亲我的宝贝！我爱你！至死不渝！</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						宝宝, 我们在一起这么长时间啦：
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						我们还要在一起生生世世！<br/>
+						<div class="signature">周周永远爱你！</div>
+
+				</div>
+			</div>
+</div>
+	
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2023, 6, 20);
+		together.setHours(0);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "嘿嘿嘿：浏览器版本太旧啦^_^换一个浏览器试试哟~~<br/>"
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+		let myAudio = document.getElementById("bgmMusic");
+		myAudio.play();
+
+	</script>
+</body>
+</html>
