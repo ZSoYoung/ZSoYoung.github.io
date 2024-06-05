@@ -37,12 +37,11 @@
 				<div id="words">
 					<div id="messages">
 						宝宝, 我们在一起这么长时间啦：
-						<div id="elapseClock"></div>
+						<div id="elapseClock" onclick="autoPlayBg()"></div>
 					</div>
 					<div id="loveu">
 						我们还要在一起生生世世！<br/>
 						<div class="signature">周周永远爱你！</div>
-
 				</div>
 			</div>
 </div>
@@ -82,8 +81,10 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
-		let myAudio = document.getElementById("bgmMusic");
-		myAudio.play();
+		function autoPlayBg(){
+			let myAudio = document.getElementById("bgmMusic");
+			myAudio.play();
+		}
 
 	</script>
 </body>
